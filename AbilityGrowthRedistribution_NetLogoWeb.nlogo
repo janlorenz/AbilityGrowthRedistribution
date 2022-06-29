@@ -30,11 +30,9 @@ to go
 end
 
 to go-fast [tmax]
-  no-display
   repeat tmax [
     go
   ]
-  display
 end
 
 ;; PROCEDURES
