@@ -30,11 +30,11 @@ to go
 end
 
 to go-fast [tmax]
-  no-display
+  if not netlogo-web? [no-display]
   repeat tmax [
     go
   ]
-  display
+  if not netlogo-web? [display]
 end
 
 ;; PROCEDURES
@@ -123,7 +123,7 @@ taxrate
 taxrate
 0
 1
-0.0
+0.1
 0.01
 1
 NIL
@@ -232,7 +232,7 @@ ability_mean
 ability_mean
 0
 1
-0.5
+0.495
 0.005
 1
 NIL
@@ -326,7 +326,7 @@ ability_sd
 ability_sd
 0
 0.05
-0.0
+0.03
 0.001
 1
 NIL
@@ -703,7 +703,7 @@ The six scenarios demonstrate two surprising growth phenomena (Scenario Series A
 
 Scenarios "A 1", "A 2", and "A 3" show how growth evolves through redistribution when the expected value of the growth factor is slightly above one (because the success factor increases wealth by 55% which is slightly more than the failure factor would decrease it with 50%). In this scenario, all agents have the ability of 0.5, which implies 50/50 chances for success and failure. In all scenarios the adminrate is 0.1, meaning the tax-revenue declines by 10% before redistribution. The taxrates in scenarios are 0, 0.1, and 0.3. The simulations show that only under 10% taxation the total wealth grow.
 
-The expected growth factor in all three simulations is 1.025 when 10% of the growth is taxed and 10% of this 10% is lost, the expected lossy growth factor is still 1.01475 and above one. However, with a taxrate of 30%, the expected lossy growth factor is 0.99425 implying an unavoidable decline in the long run. With a taxrate of 0%, there is no loss through taxation, however, simulation shows a clear decline. This decline is a property of multiplicative stochastic growth in finite populations explained in the Section "Explanation of the lower effective growth rate of a multiplicative stochastic process" below. A pure multiplicative stochastic process is effectively not growing with the expected growth factor in the long run but with the geometric mean of both factors which is always lower.
+The expected growth factor in all three simulations is 1.025 when 10% of the growth is taxed and 10% of this 10% is lost, the expected lossy growth factor is still 1.01475 and above one. However, with a taxrate of 30%, the expected lossy growth factor is 0.99425 implying an unavoidable decline in the long run. With a taxrate of 0%, there is no loss through taxation, however, simulation shows a clear decline. This decline is a property of multiplicative stochastic growth in finite populations explained in the Section "Explanation of the lower effective growth rate of a multiplicative stochastic process" below. A pure multiplicative stochastic process is effectively not growing with the expected growth factor in the long run but with the geometric mean of both factors which is always lower. The empirical effective growth rate of the total wealth is shown as "r" in the output measures. 
 
 With no taxation, total wealth declines because of the loss through risky multiplicative stochastic growth in finite societies. With taxation too high, total wealth declines because of the loss through administrative cost. Intermediate tax rates make total wealth grow. 
 
