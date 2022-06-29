@@ -138,7 +138,7 @@ adminrate
 adminrate
 0
 1
-0.0
+0.1
 0.01
 1
 NIL
@@ -202,7 +202,7 @@ success_factor
 success_factor
 1
 2
-1.5
+1.55
 0.01
 1
 NIL
@@ -232,7 +232,7 @@ ability_mean
 ability_mean
 0
 1
-0.495
+0.5
 0.005
 1
 NIL
@@ -326,7 +326,7 @@ ability_sd
 ability_sd
 0
 0.05
-0.03
+0.0
 0.001
 1
 NIL
