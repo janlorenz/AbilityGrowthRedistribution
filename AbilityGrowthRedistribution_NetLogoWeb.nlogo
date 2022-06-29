@@ -29,12 +29,6 @@ to go
   if (sum [wealth] of turtles > 10 ^ 15) [stop]
 end
 
-to go-fast [tmax]
-  repeat tmax [
-    go
-  ]
-end
-
 ;; PROCEDURES
 
 to produce-simple
@@ -502,23 +496,6 @@ NIL
 NIL
 1
 
-BUTTON
-925
-455
-1090
-488
-go 5000 ticks fast
-go-fast 5000
-NIL
-1
-T
-OBSERVER
-NIL
-NIL
-NIL
-NIL
-1
-
 TEXTBOX
 840
 390
@@ -691,6 +668,8 @@ The variables **taxrate** and **adminrate** define the process of redistribution
 ### Scenarios
 
 There are six buttons for scenario setup and a button "go 5000 ticks fast". By clicking a scenario setup, not only are new agents created but also all sliders are set to particular values. By clicking "go 5000 ticks fast", the go procedure is executed 5000 times in a row without intermediate display, which speeds up the computation a lot. (The simulation stops earlier when the total wealth reaches 10^15.)
+
+Note: The "go 5000 ticks fast" button is not available in the NetLogoWeb version of the model, because it would usually take too long. 
 
 
 ## THINGS TO NOTICE

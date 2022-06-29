@@ -694,6 +694,8 @@ The variables **taxrate** and **adminrate** define the process of redistribution
 
 There are six buttons for scenario setup and a button "go 5000 ticks fast". By clicking a scenario setup, not only are new agents created but also all sliders are set to particular values. By clicking "go 5000 ticks fast", the go procedure is executed 5000 times in a row without intermediate display, which speeds up the computation a lot. (The simulation stops earlier when the total wealth reaches 10^15.)
 
+Note: The "go 5000 ticks fast" button is not available in the NetLogoWeb version of the model, because it would usually take too long. 
+
 
 ## THINGS TO NOTICE
 
