@@ -1,4 +1,5 @@
 # AbilityGrowthRedistribution
+
 A NetLogo Model showing two surprising effects how redistribution can spur growth.
 
 This model runs in NetLogo 6.2.2 which is freely available at https://ccl.northwestern.edu/netlogo/
